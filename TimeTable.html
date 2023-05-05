@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Timetable</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	table, th , td{
+  border:1px solid black;
+  padding:8px;
+  border-collapse: collapse
+
+  }
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Times New Roman', serif;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:capitalize;
+}
+
+header {
+	position:fixed;
+	top:0; left:0; right:0;
+	background: #2F2F2F;
+	padding: 0px 7%;
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+	z-index: 1000;
+}
+
+
+header .logo{
+	font-weight:bolder;
+	font-size:25px;
+	color: #E06287;
+}
+
+header .navbar ul{
+	list-style:none;
+}
+header .navbar ul li {
+	position: relative;
+	float: left;
+}
+	
+header .navbar ul li a {
+	font-size: 20px;
+	padding:20px;
+	color:white;
+	display:block;
+}	
+
+header .navbar ul li a:hover{
+	background:#E06287;
+	colour:#2F2F2F;
+}
+
+
+header .navbar ul li ul{
+	position:absolute;
+	left:0;
+	width:200px;
+	background:#2F2F2F;
+	display:none;
+}
+
+header .navbar ul li ul li {
+	width:100%;
+	border-top: 1px solid rgba(47,47,47,.1);
+}
+
+
+
+header .navbar ul li:hover > ul{
+	display:initial;
+}
+	
+<!-- timetable --> 
+ 
+.row-lunch{
+  font-weight: bold;
+}
+
+.{
+  margin-left:8%;
+  margin-top:10%;
+
+}
+.SOW a{
+
+	background: #212121;
+	padding: 10px 18px;
+	text-decoration: none;
+	font-weight: bold;
+	color:#fff;
+	display: inline-block;
+	margin: 30px 0;
+	border-radius: 2px;
+}
+
+
+ 
+.course{
+line-height: 1.6;
+}
+
+<!-- Social media -->
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer --> 
+
+
+.footer-container{
+background color: #212329;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 10px 7%;
+   background-color:#2F2F2F;
+   color: white;
+   text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+
+ <!-- navigation bar --> 
+<header>
+
+	<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Welcome%20Page_1.html" class= "logo">IMIYYS</a>
+		<nav class="navbar">
+		
+		<ul>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Biography.html">Biography</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Resume_1.html">Resume</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/TimeTable.html">TimeTable</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Download.html">Download</a></li>
+			<li><a href="#">Gallery +</a>
+				<ul>
+					<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Gallery%20image.html">Picture</a></li>
+					<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Gallery%20video.html#">Video</a></li>
+				</ul>
+			</li>	
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Login_1.html">LogIn</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/log%20out%20thankyou.html">Logout</a></li>
+			<li><a href="https://www.facebook.com/nur.s.mimi.1" target="_blank" class="fa fa-facebook"></a></li>
+			<li><a href="https://www.youtube.com/@hazelclouds3750/videos" target="_blank" class="fa fa-youtube"></a></li>
+			<li><a href="https://www.instagram.com/imiyys_/" target="_blank" class="fa fa-instagram"></a></li>
+
+		</ul>
+		
+	
+	
+		
+	</nav>
+
+</header>
+<!-- timetable --> 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<h1 style="text-align:center;"> TimeTable</h1>
+<table style="width:60%; margin-left:auto; margin-right:auto; text-align:center;
+border:1.9px solid Gray;"> 
+
+<tr>
+    <th>Time/Day</th>
+    <th>8:00 - 10:00</th>
+    <th>10:00 - 12:00</th>
+	<th>12:00 - 2:00</th>
+	<th>2:00 - 4:00</th>
+	<th>4:00 - 6.00</th>
+ </tr>
+ 
+<tr>
+	<td>Monday </td>
+	<td> </td>
+	<td style=" text-align:center; background-color: #E3F0CE;"> <a href="#CSC574">CSC574  </a></td>
+	<td style ="background-color: #F8EDEB; font-weight: bold" rowspan="4" class="row-lunch">LUNCH</td>
+	<td> </td>
+	<td style="text-align:center;background-color:#B5DDC2 ;"><a href="#CSC569">CSC569 </a></td>
+</tr>
+
+<tr>
+	<td>Tuesday </td>
+	<td style="text-align:center;background-color:#B5DDC2 ;"><a href="#CSC569">CSC569</a> </td>
+	<td style="text-align:center;background-color:#F5F8DA ;"><a href="#CSC577">CSC577</a> </td>
+
+	<td style="text-align:center;background-color:#FDFDF2 ;"><a href="#TJC451">TJC451 </a></td>
+	<td> </td>
+</tr>
+ 
+<tr>
+	<td>Wednesday </td>
+	<td> </td>
+	<td style="text-align:center;background-color: #F2E3CF ;"><a href="#CSC584">CSC584 </a></td>
+	<td style="text-align:center;background-color:#DCF0F4 ;"><a href="#ELC650">ELC650 </a></td>
+	<td> </td>
+</tr>
+ 
+<tr>
+	<td>Thursday </td>
+	<td> </td>
+	<td style=" text-align:center; background-color: #E3F0CE;"> <a href="#CSC574" >CSC574 </a></td>
+	<td style="text-align:center;background-color: #F2E3CF ;"><a href="#CSC584">CSC584 </a></td>
+	<td style="text-align:center;background-color:#F5F8DA ;"><a href="#CSC577">CSC577</a> </td>
+ </tr>
+ 
+<tr >
+	<td>Friday </td>
+	<td style=" background-color: #F8EDEB; text-align:center; font-weight:bold; font-size:20px;background-color: ;" 
+	colspan="5">Don't have class</td> 
+ </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+	
+	<div class="cd" style="width:100%; background-color:pink; height: 150px; font-size:50px; font-weight:bold; text-align: center" >
+		<h2 style="padding: 30px 0 20px">COURSE DETAIL</h2>
+	</div>
+	<br>
+<br>
+<br>
+
+<p id="CSC574"></p><h3 style="background-color: #E3F0CE;  font-size:35px ;padding-left:20px; border-style: outset"> CSC574</h3>
+<div class="course">
+		<p style="font-size:20px; "><b>LECTURER:</b> NUR AINA KHADIJAH ADNAN (T1-03, CS2 FSKM)</p>
+		<p style="font-size:20px; "><b>COURSE NAME:</b> DYNAMIC WEB APPLICATION DEVELOPMENT  </p>
+		<p style="font-size:20px; "><b>COURSE DESCRIPTION:</b> The course introduces the students to web programming. It covers mark-up language, client-side scripting, and server-side scripting. </p>
+			<div class="SOW">
+				<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/sow/SOW_Course%20Planner_CSC574.pdf"> SOW</a>
+			</div>
+	
+	<br>
+	<p id="CSC569"></p>
+	<h3 style="background-color: #B5DDC2;  font-size:35px ;padding-left:20px; border-style: outset"> CSC569</h3>
+	<br>
+		<p style="font-size:20px; "><b>LECTURER:</b> DR. TAJUL ROSLI RAZAK</p>
+		<p style="font-size:20px; "><b>COURSE NAME:</b> PRINCIPLES OF COMPILER (CSC569) </p>
+		<p style="font-size:20px; "><b>CONTACT:</b> 017-6594200</p>
+		<p style="font-size:20px; "><b>EMAIL:</b> tajulrosli@uitm.edu.my </p>
+			<div class="SOW">
+				<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/sow/SOW%20CSC569.pdf"> SOW</a>
+			</div>
+	
+	
+	<br>
+	<p id="CSC577"></p>
+	<h3 style="background-color: #F5F8DA;  font-size:35px ;padding-left:20px; border-style: outset"> CSC577</h3>
+	<br>
+			<p style="font-size:20px; "><b>LECTURER:</b> Assoc. Prof. Dr. Azlan Ismail (T1-04, CS2 Building)</p>
+			<p style="font-size:20px; "><b>COURSE NAME:</b> PRINCIPLES OF COMPILER (CSC569) </p>
+			<p style="font-size:20px; "><b>CONTACT:</b> 016-2739766</p>
+			<p style="font-size:20px; "><b>EMAIL:</b> azlanismail@uitm.edu.my </p>
+				<div class="SOW">
+						<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/sow/1-CSC577-SOW-Mac2023-Jun2023.pdf"> SOW</a>
+				</div>
+	
+	<br>
+	
+	<p id="TJC451"></p><h3 style="background-color: #FDFDF2;  font-size:35px ;padding-left:20px; border-style: outset"> TJC451</h3>
+	<br>
+			<p style="font-size:20px; "><b>LECTURER:</b> Noor Aizah Abas Sensei</p>
+			<p style="font-size:20px; "><b>COURSE NAME:</b> JAPANESE LANGUAGE2 </p>
+			<p style="font-size:20px; "><b>CONTACT:</b> -</p>
+			<p style="font-size:20px; "><b>EMAIL:</b>  aizah654@uitm.edu.my </p>
+				<div class="SOW">
+						<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/sow/Course%20INTRODUCTORY%20JAPANESE%20(LEVEL%20II).pdf"> SOW</a>
+				</div>
+				
+				<br>
+	
+	<p id="ELC650"></p><h3 style="background-color: #DCF0F4;  font-size:35px ;padding-left:20px; border-style: outset"> ELC650</h3>
+	<br>
+			<p style="font-size:20px; "><b>LECTURER:</b> MUHAMMAD NASIRUDDIN BIN AZIZ </p>
+			<p style="font-size:20px; "><b>COURSE NAME:</b> ENGLISH FOR PROFESSIONAL INTERACTION </p>
+			<p style="font-size:20px; "><b>CONTACT:</b> - </p>
+			<p style="font-size:20px; "><b>EMAIL:</b> nasiruddinaziz@uitm.edu.my </p>
+				<div class="SOW">
+						<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/sow/ELC650%20COURSE%20INFORMATION.pdfn2023.pdf"> SOW</a>
+				</div>
+				
+				<br>
+	<p id="CSC584"></p>
+	<h3 style="background-color: #F2E3CF;  font-size:35px ;padding-left:20px; border-style: outset"> CSC584</h3>
+	<br>
+			<p style="font-size:20px; "><b>LECTURER:</b>Dr. Marshima Mohd Rosli (T1-17, CS2 Building)</p>
+			<p style="font-size:20px; "><b>COURSE NAME:</b> ENTERPRISE PROGRAMMING </p>
+			<p style="font-size:20px; "><b>CONTACT:</b> 016-2739766</p>
+			<p style="font-size:20px; "><b>EMAIL:</b> marshima@fskm.uitm.edu.my </p>
+				<div class="SOW">
+						<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/sow/1-CSC577-SOW-Mac2023-Jun2023.pdf"> SOW</a>
+				</div>
+	
+	
+	
+	
+	
+	
+	
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<!-- footer --> 
+
+<div class = "footer-container" >
+
+	<div class="footer">
+		<p>Shah Alam, Selangor, MALAYSIA | Phone: 018-3673050 | Email: 2021864332@student.uitm.edu.my</p>
+		<p> Copyright © 2023 Imiyys</p>
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Sign Up</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<style>
+
+
+ <!-- navigation bar --> 
+ 
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Times New Roman', serif;
+  box-sizing: border-box;
+}
+
+.hero{
+position: relative;
+width: 100%;
+height:100vh;
+background: #egg4fd;
+}
+
+nav {
+display: flex;
+width:85%
+margin:auto;
+padding: 20px 0;
+justify-content: space-between;
+}
+
+
+nav ul li{
+  display: inline-block;
+  padding: px;
+  list-style: none;
+  cursor: pointer;
+  margin:10px 20px;
+  
+}
+
+nav ul li a{
+text-decoration: none;
+color:#000;
+font-weight:bold;
+}
+
+
+nav ul li a:hover
+{
+color:#FFB6C1;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body 
+{
+  margin:0;
+  padding:0;
+}
+
+ul li{
+  display: inline-block;
+  padding: px;
+  font-family: 'Times New Roman', serif;
+  cursor: pointer;
+  
+}
+
+
+
+/* Style the top navigation bar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #90C0FA;
+  width: 100%;
+  height:50px;
+  color: white
+	
+}
+
+.nav {
+  text-align: left;
+}
+.social{
+float: right;;
+}
+
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: 	#F5F5F5;
+  text-align: left;
+  padding: 2px 16px;
+  text-decoration: none;
+  font-size:22px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #B0CCFF;
+  color: black;
+  
+}
+
+
+<!-- Sign Up-->
+table, th, td {
+  border:0;background-color:#C6DEFF;}
+  h1 {text-align: center;}
+ 
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.dropdown{
+    width: 200px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #DEFCFF;
+  outline: none;
+}
+
+
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.clearbtn {
+  padding: 14px 20px;
+  background-color: #A9B2B2;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn, clearbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Set a style for all buttons */
+button {
+ width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #8AFF9D;
+  font-size:16px;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+
+<!-- footer --> 
+
+
+.footer-container{
+background color: #212329;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#6C6C6C;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+ <!-- navigation bar --> 
+
+<div class="hero">
+	<nav>
+		 		<p><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Welcome%20Page%20.html"><img src="rsz_1rsz_1mimi.png" class= "logo">
+		<ul>
+		<li><a href="#">Biography</a></li>
+		<li><a href="#">Resume</a></li>
+		<li><a href="#">Table</a></li>
+		<li><a href="#">Download</a></li>
+		<li><a href="#">Galleries</a></li>
+		<li><a href="#">Links</a></li>
+		<li><a href="file:///C:/xampp/htdocs/dashboard/ASSIGNMENT1,2/log%20in%20with%20header.html">Login</a></li>
+		
+		</ul>
+	</nav>
+
+
+
+<h1>Sign Up Form</h2>
+
+
+<table style="margin-left:auto; margin-right:auto; text-align:center;
+border:1px solid Gray;width:30%"
+ <form action="/action_page.php" target="_blank" method="post">
+ 
+
+ <tr>
+  <td><p style="color:black; text-align: left" ><label for=fn">First Name:</label></td></p>
+  <th> <input type="text" placeholder="First Name" name="fn" required></th>
+  </tr>
+
+
+
+ <tr>
+  <td><p style="color:black; text-align: left" ><label for=ln">Last Name:</label></td></p>
+  <th> <input type="text" placeholder="Last Name" name="ln" required></th>
+  </tr>
+
+
+
+<tr>
+ <td> <p style="color:black; text-align: left"> <label for="gender">Gender:</label></td>
+ <th><p style="color:black"><label for="male">Male:</label> 
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="female">Female:</label> 
+ <input type="radio" id="female" name="gender" value="female">
+
+ </th></p>
+
+
+ <tr>
+  <td><p style="color:black; text-align: left" ><label for=a1">Address 1:</label></td></p>
+  <th> <input type="text" placeholder="Address 1" name="a1" required></th>
+  </tr>
+
+ <tr>
+  <td><p style="color:black; text-align: left" ><label for=a2">Address 2:</label></td></p>
+  <th> <input type="text" placeholder="Address 2" name="a2" required></th>
+  </tr>
+
+
+ <tr>
+  <td><p style="color:black;text-align: left" ><label for=ct">City:</label></td></p>
+  <th> <input type="text" placeholder="City" name="ct" required></th>
+  </tr>
+
+
+<tr>
+  <td><p style="color:black; text-align: left"><label for="State">State:</label></td>
+  <th> 
+
+  <select class="dropdown" name="State " id="State">
+  <option value="perlis">  Perlis </option>
+    <option value="pp">Pulau Pinang</option>
+    <option value="kedah">Kedah</option>
+    <option value="perak">Perak</option>
+    <option value="kelantan">Kelantan</option>
+	<option value="WP">Wilayah Persekutuan</option>
+	<option value="sabah">Sabah</option>
+	<option value="gannu">Terengganu</option>
+	<option value="pahang">Pahang</option>
+	<option value="sel">Selangor</option>
+	<option value="n9">Negeri Sembilan</option>
+	<option value="johor">Johor</option>
+	<option value="srwk">Sarawak</option>
+	<option value="melaka">Melaka</option>
+	
+	</p>
+  </select>
+  </th>
+</tr>
+
+<tr>
+  <td> <p style="color:black; text-align: left"><label for="phone">Phone Number:</label></td></p>
+  <th> <input type="text" id="phone" name="phone" placeholder=" " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></th>
+  </tr>
+
+<tr>
+  <td><p style="color:black; text-align: left"> <label for="email">Email:</label></td></p>
+  <th> <input type="text" id="email" name="email" value="Your Email"></th>
+  </tr>
+
+
+<tr>
+	<td> <p style="color:black; text-align: left"><label for="BS">Background Study:</label></td>
+	
+	<th> <input type="checkbox" id="bs1" name="bs1" value="spm">
+  <label for="bs1"> SPM</label><br>
+  <input type="checkbox" id="bs2" name="bs2" value="diploma">
+  <label for="bs2"> DIPLOMA</label><br>
+  <input type="checkbox" id="bs3" name="bs3" value="DEGREE">
+  <label for="bs3"> DEGREE</label><br>
+  <input type="checkbox" id="bs4" name="bs4" value="MASTER">
+  <label for="bs4"> DEGREE</label><br>
+  <input type="checkbox" id="bs5" name="bs5" value="PHD">
+  <label for="bs5"> PHD</label><br>
+  
+  </p>
+</th>
+</tr>
+
+
+<tr>
+  <td><p style="color:black;text-align: left" ><label for="id">ID:</label></td></p>
+  <th> <input type="text" placeholder="Enter ID" name="id" required></th>
+  </tr>
+
+
+<tr>
+<td> <p style="color:black; text-align: left"><label for="psw">Password:</label></td></p>
+<th><input type="password" placeholder="Enter Password" name="psw" required></th>
+</tr>
+
+
+
+
+
+
+<tr>
+<td> <p style="color:black; text-align: left"><label for="psw-repeat">Repeat Password:</label></td></p>
+<th><input type="password" placeholder="Repeat Password" name="psw-repeat" required></th>
+</tr>
+
+
+
+
+<tr><td  colspan="2" style="text-align:center;" >
+<div  class="clearfix">
+<button onclick="document.location='#'" class="cancelbtn">Cancel</button>
+     
+      <button type="submit" class="signupbtn">Sign Up</button>
+	  <button type="reset" value= "Reset" class="clearbtn">Clear </button>
+    </div>
+  </div>
+  </td>
+</tr>
+
+
+
+  </table> 
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  <!-- footer --> 
+
+<div class = "footer-container">
+
+	<div class="footer">
+		<p>Shah Alam, Selangor, MALAYSIA | Phone: 018-3673050 | Email: 2021864332@student.uitm.edu.my</p>
+		<p> Copyright © 2023 Imiyys</p>
+	</div>
+</div>
+</body>
+</html>

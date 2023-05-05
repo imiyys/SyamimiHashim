@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> SignUp</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Times New Roman', serif;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:capitalize;
+}
+
+header {
+	position:fixed;
+	top:0; left:0; right:0;
+	background: #2F2F2F;
+	padding: 0px 7%;
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+	z-index: 1000;
+}
+
+
+header .logo{
+	font-weight:bolder;
+	font-size:25px;
+	color: #E06287;
+}
+
+header .navbar ul{
+	list-style:none;
+}
+header .navbar ul li {
+	position: relative;
+	float: left;
+}
+	
+header .navbar ul li a {
+	font-size: 20px;
+	padding:20px;
+	color:white;
+	display:block;
+}	
+
+header .navbar ul li a:hover{
+	background:#E06287;
+	colour:#2F2F2F;
+}
+
+
+header .navbar ul li ul{
+	position:absolute;
+	left:0;
+	width:200px;
+	background:#2F2F2F;
+	display:none;
+}
+
+header .navbar ul li ul li {
+	width:100%;
+	border-top: 1px solid rgba(47,47,47,.1);
+}
+
+
+
+header .navbar ul li:hover > ul{
+	display:initial;
+}
+	
+
+<!-- Sign Up-->
+table, th, td {
+  border:0;  background-color: #CDEFF;}
+  h1 {text-align: center;}
+ 
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.dropdown{
+    width: 200px;
+}
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+input[type="button" ] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #FFDCDC;
+  font-size:16px;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+ width: 100%;
+  height: 50px;
+  border: 1px solid;
+  font-size:16px;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  background-color: #f44336;
+}
+
+<!-- Social media -->
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+<!-- footer --> 
+
+
+.footer-container{
+background color: #212329;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 10px 7%;
+   background-color:#2F2F2F;
+   color: white;
+   text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+
+ <!-- navigation bar --> 
+<header>
+
+	<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Welcome%20Page_1.html" class= "logo">IMIYYS</a>
+		<nav class="navbar">
+		
+			
+		<ul>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Biography.html">Biography</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Resume_1.html">Resume</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/TimeTable.html">TimeTable</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Download.html">Download</a></li>
+			<li><a href="#">Gallery +</a>
+				<ul>
+					<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Gallery%20image.html">Picture</a></li>
+					<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Gallery%20video.html#">Video</a></li>
+				</ul>
+			</li>	
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Login_1.html">LogIn</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/log%20out%20thankyou.html">Logout</a></li>
+			<li><a href="https://www.facebook.com/nur.s.mimi.1" target="_blank" class="fa fa-facebook"></a></li>
+			<li><a href="https://www.youtube.com/@hazelclouds3750/videos" target="_blank" class="fa fa-youtube"></a></li>
+			<li><a href="https://www.instagram.com/imiyys_/" target="_blank" class="fa fa-instagram"></a></li>
+
+		</ul>
+	
+	
+		
+	</nav>
+
+</header>
+
+
+<!-- signUp --> 
+<br><br>
+<br><br>
+<br><br>
+<br>
+<h1>Sign Up Form</h2>
+<br>
+
+<table style="margin-left:auto; margin-right:auto; text-align:center;
+border:1.9px solid Gray;width:30%"
+
+ <form action="/action_page.php" target="_blank" method="post">
+ 
+
+ <tr>
+  <td><p style="color:black; " ><label for=fn">First Name:</label></td></p>
+  <th> <input type="text" placeholder="First Name" name="fn" required></th>
+  </tr>
+
+
+
+ <tr>
+  <td><p style="color:black; " ><label for=ln">Last Name:</label></td></p>
+  <th> <input type="text" placeholder="Last Name" name="ln" required></th>
+  </tr>
+
+
+
+<tr>
+ <td> <p style="color:black; "> <label for="gender">Gender:</label></td>
+ <th><p style="color:black"><label for="male">Male:</label> 
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="female">Female:</label> 
+ <input type="radio" id="female" name="gender" value="female">
+
+ </th></p>
+
+
+ <tr>
+  <td><p style="color:black; " ><label for=a1">Address 1:</label></td></p>
+  <th> <input type="text" placeholder="Address 1" name="a1" required></th>
+  </tr>
+
+ <tr>
+  <td><p style="color:black; " ><label for=a2">Address 2:</label></td></p>
+  <th> <input type="text" placeholder="Address 2" name="a2" required></th>
+  </tr>
+
+
+ <tr>
+  <td><p style="color:black;" ><label for=ct">City:</label></td></p>
+  <th> <input type="text" placeholder="City" name="ct" required></th>
+  </tr>
+
+
+<tr>
+  <td><p style="color:black; "><label for="State">State:</label></td>
+  <th> 
+
+  <select class="dropdown" name="State " id="State">
+  <option value="perlis">  Perlis </option>
+    <option value="pp">Pulau Pinang</option>
+    <option value="kedah">Kedah</option>
+    <option value="perak">Perak</option>
+    <option value="kelantan">Kelantan</option>
+	<option value="WP">Wilayah Persekutuan</option>
+	<option value="sabah">Sabah</option>
+	<option value="gannu">Terengganu</option>
+	<option value="pahang">Pahang</option>
+	<option value="sel">Selangor</option>
+	<option value="n9">Negeri Sembilan</option>
+	<option value="johor">Johor</option>
+	<option value="srwk">Sarawak</option>
+	<option value="melaka">Melaka</option>
+	
+	</p>
+  </select>
+  </th>
+</tr>
+
+<tr>
+  <td> <p style="color:black;"><label for="phone">Phone Number:</label></td></p>
+  <th> <input type="text" id="phone" name="phone" placeholder=" " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></th>
+  </tr>
+
+<tr>
+  <td><p style="color:black; "> <label for="email">Email:</label></td></p>
+  <th> <input type="text" id="email" name="email" value="Your Email"></th>
+  </tr>
+
+
+<tr>
+	<td> <p style="color:black;"><label for="BS">Background Study:</label></td>
+	
+	<th>  <p style=" text-align:left;"><input type="checkbox" id="bs1" name="bs1" value="spm" >
+  <label for="bs1"> SPM</label><br>
+  <input type="checkbox" id="bs2" name="bs2" value="diploma">
+  <label for="bs2"> DIPLOMA</label><br>
+  <input type="checkbox" id="bs3" name="bs3" value="DEGREE">
+  <label for="bs3"> DEGREE</label><br>
+  <input type="checkbox" id="bs4" name="bs4" value="MASTER">
+  <label for="bs4"> DEGREE</label><br>
+  <input type="checkbox" id="bs5" name="bs5" value="PHD">
+  <label for="bs5"> PHD</label><br>
+  
+  </p>
+</th>
+</tr>
+
+
+<tr>
+  <td><p style="color:black;" ><label for="id">ID:</label></td></p>
+  <th> <input type="text" placeholder="Enter ID" name="id" required></th>
+  </tr>
+
+
+<tr>
+<td> <p style="color:black;"><label for="psw">Password:</label></td></p>
+<th><input type="password" placeholder="Enter Password" name="psw" required></th>
+</tr>
+
+
+
+
+
+
+<tr>
+<td> <p style="color:black;"><label for="psw-repeat">Repeat Password:</label></td></p>
+<th><input type="password" placeholder="Repeat Password" name="psw-repeat" required></th>
+</tr>
+
+
+
+
+<tr><td  colspan="2" style="text-align:center;" >
+<div  class="clearfix">
+<button onclick="document.location='file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Welcome%20Page_1.html'" class="cancelbtn">Cancel</button>
+	  <button onclick="#" class="signupbtn">Register</button>
+
+      
+	  <input type="reset" value="Clear">
+    </div>
+  </div>
+  </td>
+</tr>
+
+  </form>
+
+  </table> 
+
+  <br>
+  <br>
+   <br>
+  <br>
+   <br>
+
+
+
+
+
+
+
+
+
+
+<!-- footer --> 
+
+<div class = "footer-container" >
+
+	<div class="footer">
+		<p>Shah Alam, Selangor, MALAYSIA | Phone: 018-3673050 | Email: 2021864332@student.uitm.edu.my</p>
+		<p> Copyright © 2023 Imiyys</p>
+	</div>
+</div>
+
+
+
+</body>
+</html>

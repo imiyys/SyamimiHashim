@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Video</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Sacramento">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Times New Roman', serif;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:capitalize;
+}
+
+header {
+	position:fixed;
+	top:0; left:0; right:0;
+	background: #2F2F2F;
+	padding: 0px 7%;
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+	z-index: 1000;
+}
+
+
+header .logo{
+	font-weight:bolder;
+	font-size:25px;
+	color: #E06287;
+}
+
+header .navbar ul{
+	list-style:none;
+}
+header .navbar ul li {
+	position: relative;
+	float: left;
+}
+	
+header .navbar ul li a {
+	font-size: 20px;
+	padding:20px;
+	color:white;
+	display:block;
+}	
+
+header .navbar ul li a:hover{
+	background:#E06287;
+	colour:#2F2F2F;
+}
+
+
+header .navbar ul li ul{
+	position:absolute;
+	left:0;
+	width:200px;
+	background:#2F2F2F;
+	display:none;
+}
+
+header .navbar ul li ul li {
+	width:100%;
+	border-top: 1px solid rgba(47,47,47,.1);
+}
+
+
+
+header .navbar ul li:hover > ul{
+	display:initial;
+}
+	
+
+<!-- video -->
+
+
+.video-container{
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left:70px;
+}
+
+.video-container video{
+
+	width:250px;
+	height 250px;
+	margin: 2rem;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+	overflow: hidden;
+	border-radius: 1rem;
+}
+
+.video-container .video video{
+	
+	obhect-fit: cover;
+	outline:none;
+	border:none;
+	cursor:pointer;
+
+}
+.video-container .video video:hover{
+	transition: .3s linear;
+	transform: scale(1.2);
+}
+<!-- Social media -->
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+<!-- footer --> 
+
+
+.footer-container{
+background color: #212329;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 10px 7%;
+   background-color:#2F2F2F;
+   color: white;
+   text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+
+ <!-- navigation bar --> 
+<header>
+
+	<a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Welcome%20Page_1.html" class= "logo">IMIYYS</a>
+		<nav class="navbar">
+		
+			
+		<ul>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Biography.html">Biography</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Resume_1.html">Resume</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/TimeTable.html">TimeTable</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Download.html">Download</a></li>
+			<li><a href="#">Gallery +</a>
+				<ul>
+					<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Gallery%20image.html">Picture</a></li>
+					<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Gallery%20video.html#">Video</a></li>
+				</ul>
+			</li>	
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/Login_1.html">LogIn</a></li>
+			<li><a href="file:///C:/xampp/htdocs/dashboard/TRY%20WEBSITE/log%20out%20thankyou.html">Logout</a></li>
+			<li><a href="https://www.facebook.com/nur.s.mimi.1" target="_blank" class="fa fa-facebook"></a></li>
+			<li><a href="https://www.youtube.com/@hazelclouds3750/videos" target="_blank" class="fa fa-youtube"></a></li>
+			<li><a href="https://www.instagram.com/imiyys_/" target="_blank" class="fa fa-instagram"></a></li>
+
+		</ul>
+	
+	
+		
+	</nav>
+
+</header>
+
+<!-- video --> 
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<div class="container" style="padding-left:100px;">
+
+	<h1 style="font-family: 'Abril Fatface', cursive; font-size:45px; text-align:center;"> Video Gallery</h1>
+	<br><p style="font-family: 'Sacramento', cursive; font-size:25px; text-align:center;">The best way to keep remember the memories is by record it and make a video</p>
+<br><hr/>
+		<div class="video-container">
+			<div class="video">
+			<video src="vid1.mp4" ></video>
+			<video src="vid3.mp4" ></video>
+			<video src="vid9.mp4" ></video>
+			<video src="vid10.mp4" ></video>
+			<video src="vid5.mp4" ></video>
+			<video src="vid2.mp4" muted ></video>
+			<video src="vid6.mp4" ></video>
+			<video src="vid7.mp4" ></video>
+			
+			</div>
+		</div>
+</div>
+<br><br>
+<br><br><br>
+<br>
+
+
+<script>
+var video = document.querySelectorAll('video')
+
+video.forEach(play => play.addEventListener('click', () =>{
+
+ play.classList.toggle('active');
+ 
+ if(play.paused){
+play.play();
+}else {
+play.pause();
+play.currenTime = 0;
+}
+ }));
+
+
+
+</script>
+
+<!-- footer --> 
+
+<div class = "footer-container" >
+
+	<div class="footer">
+		<p>Shah Alam, Selangor, MALAYSIA | Phone: 018-3673050 | Email: 2021864332@student.uitm.edu.my</p>
+		<p> Copyright © 2023 Imiyys</p>
+	</div>
+</div>
+
+
+
+</body>
+</html>
